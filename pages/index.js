@@ -4,6 +4,7 @@ const onfidoContainerId = 'onfido-mount'
 export class Index extends React.Component {
   handleClick () {
     console.log('About to require')
+    // This will fail if you update to the latest version of the sdk
     const Onfido = require('onfido-sdk-ui')
     console.log('Require successful')
   }
